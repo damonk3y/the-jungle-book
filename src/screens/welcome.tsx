@@ -10,7 +10,7 @@ export const Welcome = () => {
       <p className="mt-4 pr-20 text-gray-400">
         We are principle driven people who do things for fun. We
         build, we game, we learn, we share.
-      </p>  
+      </p>
       <p className="mt-12 text-right w-full">
         {"-> let people know you exist"}
       </p>
@@ -22,16 +22,26 @@ export const Welcome = () => {
       </p>
       <div className="mt-20 flex gap-4">
         <a href="https://discord.gg/rHfXrVNe2V" target="_blank">
-            <img src={DiscordIcon} alt="damonk3ys logo" className="size-6" />
+          <img
+            src={DiscordIcon}
+            alt="damonk3ys logo"
+            className="size-6"
+          />
         </a>
         <a href="https://x.com/damonk3y_" target="_blank">
-            <img src={XIcon} alt="damonk3ys logo" className="size-5" />
+          <img src={XIcon} alt="damonk3ys logo" className="size-5" />
         </a>
-        <a href="https://www.instagram.com/damonk3y.xyz/" target="_blank">
-            <img src={InstagramIcon} alt="damonk3ys logo" className="size-5" />
+        <a
+          href="https://www.instagram.com/damonk3y.xyz/"
+          target="_blank"
+        >
+          <img
+            src={InstagramIcon}
+            alt="damonk3ys logo"
+            className="size-5"
+          />
         </a>
       </div>
     </section>
   );
 };
-
