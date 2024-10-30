@@ -2,6 +2,7 @@ import Logo from "@/components/ui/assets/logo.svg";
 import DiscordIcon from "@/components/ui/assets/discord-icon.svg";
 import XIcon from "@/components/ui/assets/x-icon.svg";
 import InstagramIcon from "@/components/ui/assets/instagram-icon.svg";
+import GitHubIcon from "@/components/ui/assets/github-icon.svg";
 export const Welcome = () => {
   return (
     <section className="w-full h-full flex flex-col justify-center items-center mx-auto max-w-[500px] px-4 py-12">
@@ -20,16 +21,16 @@ export const Welcome = () => {
       <p className="text-right w-full">
         {"-> have fun and respect the jungle"}
       </p>
-      <div className="mt-20 flex gap-4">
+      <div className="my-12 flex gap-4">
         <a href="https://discord.gg/rHfXrVNe2V" target="_blank">
           <img
             src={DiscordIcon}
-            alt="damonk3ys logo"
+            alt="damonk3ys discord"
             className="size-6"
           />
         </a>
         <a href="https://x.com/damonk3y_" target="_blank">
-          <img src={XIcon} alt="damonk3ys logo" className="size-5" />
+          <img src={XIcon} alt="damonk3ys X" className="size-5" />
         </a>
         <a
           href="https://www.instagram.com/damonk3y.xyz/"
@@ -37,7 +38,17 @@ export const Welcome = () => {
         >
           <img
             src={InstagramIcon}
-            alt="damonk3ys logo"
+            alt="damonk3ys instagram"
+            className="size-5"
+          />
+        </a>
+        <a
+          href="https://github.com/damonk3y"
+          target="_blank"
+        >
+          <img
+            src={GitHubIcon}
+            alt="damonk3ys github"
             className="size-5"
           />
         </a>
