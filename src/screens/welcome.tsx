@@ -19,7 +19,7 @@ export const Welcome = () => {
       <p className="text-right w-full">
         {"-> have fun and respect the jungle"}
       </p>
-      <SocialLinks className="my-12"/>
+      <SocialLinks className="my-12" />
     </section>
   );
 };
