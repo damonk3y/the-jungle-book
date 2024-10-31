@@ -1,9 +1,5 @@
 import Logo from "@/components/ui/assets/logo.svg";
-import DiscordIcon from "@/components/ui/assets/discord-icon.svg";
-import XIcon from "@/components/ui/assets/x-icon.svg";
-import InstagramIcon from "@/components/ui/assets/instagram-icon.svg";
-import GitHubIcon from "@/components/ui/assets/github-icon.svg";
-import TwitchIcon from "@/components/ui/assets/twitch-icon.svg";
+import { SocialLinks } from "@/components/ui/social-links";
 
 export const Welcome = () => {
   return (
@@ -23,48 +19,7 @@ export const Welcome = () => {
       <p className="text-right w-full">
         {"-> have fun and respect the jungle"}
       </p>
-      <div className="my-12 flex gap-4">
-        <a href="https://discord.gg/rHfXrVNe2V" target="_blank">
-          <img
-            src={DiscordIcon}
-            alt="damonk3ys discord"
-            className="size-6"
-          />
-        </a>
-        <a href="https://x.com/damonk3y_" target="_blank">
-          <img src={XIcon} alt="damonk3ys X" className="size-5" />
-        </a>
-        <a
-          href="https://www.instagram.com/damonk3y.xyz/"
-          target="_blank"
-        >
-          <img
-            src={InstagramIcon}
-            alt="damonk3ys instagram"
-            className="size-5"
-          />
-        </a>
-        <a
-          href="https://github.com/damonk3y"
-          target="_blank"
-        >
-          <img
-            src={GitHubIcon}
-            alt="damonk3ys github"
-            className="size-5"
-          />
-        </a>
-        <a
-          href="https://www.twitch.tv/damonk3y_"
-          target="_blank"
-        >
-          <img
-            src={TwitchIcon}
-            alt="damonk3ys github"
-            className="size-5"
-          />
-        </a>
-      </div>
+      <SocialLinks className="my-12"/>
     </section>
   );
 };

@@ -6,11 +6,11 @@ import {
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ToastContainer } from "react-toastify";
 import "./index.css";
-import Login from "./screens/login";
 import { useUserStore } from "./stores/user";
 import { useIndexBooster } from "./hooks/use-index-booster";
 import "react-toastify/dist/ReactToastify.css";
 import { Welcome } from "./screens/welcome";
+import { Values } from "./screens/values";
 
 // const ProtectedRoute = ({
 //   children
@@ -47,10 +47,10 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: "/sign-in",
+    path: "/values",
     element: (
       <LoggedOutRoute>
-        <Login />
+        <Values />
       </LoggedOutRoute>
     )
   }
