@@ -3,6 +3,8 @@ import DiscordIcon from "@/components/ui/assets/discord-icon.svg";
 import XIcon from "@/components/ui/assets/x-icon.svg";
 import InstagramIcon from "@/components/ui/assets/instagram-icon.svg";
 import GitHubIcon from "@/components/ui/assets/github-icon.svg";
+import TwitchIcon from "@/components/ui/assets/twitch-icon.svg";
+
 export const Welcome = () => {
   return (
     <section className="w-full h-full flex flex-col justify-center items-center mx-auto max-w-[500px] px-4 py-12">
@@ -48,6 +50,16 @@ export const Welcome = () => {
         >
           <img
             src={GitHubIcon}
+            alt="damonk3ys github"
+            className="size-5"
+          />
+        </a>
+        <a
+          href="https://www.twitch.tv/damonk3y_"
+          target="_blank"
+        >
+          <img
+            src={TwitchIcon}
             alt="damonk3ys github"
             className="size-5"
           />
