@@ -22,7 +22,11 @@ export const Values = () => {
         </h1>
         <div className="flex flex-col gap-4 items-center justify-center lg:hidden mb-12">
           <Link to="/">
-            <img src={Logo} alt="damonk3ys logo" className="size-80" />
+            <img
+              src={Logo}
+              alt="damonk3ys logo"
+              className="size-80"
+            />
           </Link>
           <h3 className="w-full text-center text-xl text-yellow-400 tracking-widest underline">
             #weareallmonk3ys
@@ -139,7 +143,10 @@ export const Values = () => {
         </p>
         <div className="flex justify-end my-12 pb-12 max-lg:w-full">
           <a
-            className={cn(buttonVariants(), "max-lg:w-full border-2 font-semibold border-white px-12")}
+            className={cn(
+              buttonVariants(),
+              "max-lg:w-full border-2 font-semibold border-white px-12"
+            )}
             href="https://discord.gg/rHfXrVNe2V"
             target="_blank"
           >

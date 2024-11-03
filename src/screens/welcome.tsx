@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom";
 import Logo from "@/components/ui/assets/logo.svg";
 import { buttonVariants } from "@/components/ui/button";
 import { SocialLinks } from "@/components/ui/social-links";
 import { cn } from "@/lib/utils";
-import { Link } from "react-router-dom";
 
 export const Welcome = () => {
   return (
@@ -25,13 +25,34 @@ export const Welcome = () => {
         {"-> have fun and respect the jungle"}
       </p>
       <SocialLinks className="mt-12" />
-      <div className="flex justify-center my-12 pb-12 max-lg:w-full">
-          <Link
-            className={cn(buttonVariants(), "border-2 font-semibold border-white px-12")}
-            to="/values"
-          >
-            Community Values
-          </Link>
+      <div className="flex justify-center my-12 pb-12 max-lg:w-full gap-4">
+        <Link
+          className={cn(
+            buttonVariants(),
+            "border-2 font-semibold border-white px-4"
+          )}
+          to="/values"
+        >
+          Community Values
+        </Link>
+        <Link
+          className={cn(
+            buttonVariants(),
+            "border-2 font-semibold border-white px-4"
+          )}
+          to="/explore"
+        >
+          Explore
+        </Link>
+        <Link
+          className={cn(
+            buttonVariants(),
+            "border-2 font-semibold border-white px-4"
+          )}
+          to="/docs"
+        >
+          Docs
+        </Link>
       </div>
     </section>
   );

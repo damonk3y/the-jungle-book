@@ -11,19 +11,21 @@ import { useIndexBooster } from "./hooks/use-index-booster";
 import "react-toastify/dist/ReactToastify.css";
 import { Welcome } from "./screens/welcome";
 import { Values } from "./screens/values";
+import Explore from "./screens/explore";
+import Login from "./screens/login";
+import Docs from "./screens/docs";
 
-// const ProtectedRoute = ({
-//   children
-// }: {
-//   children: React.ReactNode;
-//   requiresStore: boolean;
-// }) => {
-//   const { currentUser } = useUserStore();
-//   if (!currentUser) {
-//     return <Navigate to="/" replace />;
-//   }
-//   return children;
-// };
+const ProtectedRoute = ({
+  children
+}: {
+  children: React.ReactNode;
+}) => {
+  const { currentUser } = useUserStore();
+  if (!currentUser) {
+    return <Navigate to="/sign-in" replace />;
+  }
+  return children;
+};
 
 const LoggedOutRoute = ({
   children
@@ -40,17 +42,29 @@ const LoggedOutRoute = ({
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <LoggedOutRoute>
-        <Welcome />
-      </LoggedOutRoute>
-    )
+    element: <Welcome />
+  },
+  {
+    path: "/docs",
+    element: <Docs />
   },
   {
     path: "/values",
+    element: <Values />
+  },
+  {
+    path: "/explore",
+    element: (
+      <ProtectedRoute>
+        <Explore />
+      </ProtectedRoute>
+    )
+  },
+  {
+    path: "/sign-in",
     element: (
       <LoggedOutRoute>
-        <Values />
+        <Login />
       </LoggedOutRoute>
     )
   }
