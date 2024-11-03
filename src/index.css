@@ -4,12 +4,48 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	min-width: 100%;
-	margin: 0;
-	display: flex;
-	place-items: center;
-	min-height: 100vh;
+@layer base {
+	* {
+		@apply border-border;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		@apply scroll-smooth antialiased;
+	}
+
+	body {
+		@apply bg-black text-white min-h-screen;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	::-webkit-scrollbar {
+		display: none;
+	}
+
+	* {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	img, 
+	picture, 
+	video, 
+	canvas, 
+	svg {
+		display: block;
+		max-width: 100%;
+	}
+
+	input,
+	button,
+	textarea,
+	select {
+		font: inherit;
+	}
 }
 
 @layer base {

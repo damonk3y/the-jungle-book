@@ -31,7 +31,7 @@ const LoggedOutRoute = ({
   children: React.ReactNode;
 }) => {
   const { currentUser } = useUserStore();
-  if (!!currentUser) {
+  if (currentUser) {
     return <Navigate to="/stores" replace />;
   }
   return children;

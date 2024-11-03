@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 export const Welcome = () => {
   return (
-    <section className="w-full h-full flex flex-col justify-center items-center mx-auto max-w-[500px] px-4 py-12">
-      <Link to="/">
+    <section className="w-full h-full flex flex-col justify-center items-center mx-auto max-w-[500px] px-4">
+      <Link to="/" className="block pt-24">
         <img src={Logo} alt="damonk3ys logo" className="size-80" />
       </Link>
       <h1 className="text-blue-400">da monk3y</h1>

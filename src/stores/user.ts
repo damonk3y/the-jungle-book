@@ -1,11 +1,11 @@
 import { create } from "zustand";
 
 interface UserStore {
-  currentUser?: any;
-  setUser: (user: any) => void;
+  currentUser?: unknown;
+  setUser: (user: unknown) => void;
 }
 
 export const useUserStore = create<UserStore>(set => ({
   currentUser: undefined,
-  setUser: (user: any) => set({ currentUser: user })
+  setUser: (user: unknown) => set({ currentUser: user })
 }));
