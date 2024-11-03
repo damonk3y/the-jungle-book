@@ -1,22 +1,29 @@
 import Logo from "@/components/ui/assets/logo.svg";
+import { buttonVariants } from "@/components/ui/button";
 import { SocialLinks } from "@/components/ui/social-links";
+import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 export const Values = () => {
   return (
-    <section className="w-full h-full flex max-lg:flex-col items-center justify-center gap-24 mx-auto max-w-[1248px] px-4 py-12 max-lg:overflow-y-scroll min-lg:py-20">
-      <div className="hidden flex-col gap-4 items-center justify-center min-lg:flex">
-        <img src={Logo} alt="damonk3ys logo" className="size-80" />
+    <section className="w-full h-full flex max-lg:flex-col items-center justify-center gap-24 mx-auto max-w-[1248px] px-4 py-12 max-lg:overflow-y-scroll">
+      <div className="hidden flex-col gap-4 items-center justify-center lg:flex">
+        <Link to="/">
+          <img src={Logo} alt="damonk3ys logo" className="size-80" />
+        </Link>
         <h3 className="w-full text-center text-xl text-yellow-400 tracking-widest underline">
           #weareallmonk3ys
         </h3>
         <SocialLinks className="mt-2" />
       </div>
-      <div className="basis-2/3 min-lg:overflow-y-scroll min-lg:py-20 h-full scrollbar-hide">
+      <div className="basis-2/3 lg:overflow-y-scroll lg:py-20 h-full scrollbar-hide">
         <h1 className="text-2xl text-center lg:text-left lg:text-4xl italic mb-12 scroll">
           Community Values
         </h1>
-        <div className="flex flex-col gap-4 items-center justify-center min-lg:hidden mb-12">
-          <img src={Logo} alt="damonk3ys logo" className="size-80" />
+        <div className="flex flex-col gap-4 items-center justify-center lg:hidden mb-12">
+          <Link to="/">
+            <img src={Logo} alt="damonk3ys logo" className="size-80" />
+          </Link>
           <h3 className="w-full text-center text-xl text-yellow-400 tracking-widest underline">
             #weareallmonk3ys
           </h3>
@@ -130,6 +137,15 @@ export const Values = () => {
           meaningful connections. Let's grow, learn, and create
           together!
         </p>
+        <div className="flex justify-end my-12 pb-12 max-lg:w-full">
+          <a
+            className={cn(buttonVariants(), "max-lg:w-full border-2 font-semibold border-white px-12")}
+            href="https://discord.gg/rHfXrVNe2V"
+            target="_blank"
+          >
+            Join Discord
+          </a>
+        </div>
       </div>
     </section>
   );
