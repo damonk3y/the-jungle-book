@@ -3,6 +3,7 @@ import XIcon from "@/components/ui/assets/x-icon.svg";
 import InstagramIcon from "@/components/ui/assets/instagram-icon.svg";
 import GitHubIcon from "@/components/ui/assets/github-icon.svg";
 import TwitchIcon from "@/components/ui/assets/twitch-icon.svg";
+import BlueskyIcon from "@/components/ui/assets/bluesky-icon.png";
 import { cn } from "@/lib/utils";
 
 export const SocialLinks = ({
@@ -12,11 +13,11 @@ export const SocialLinks = ({
 }) => {
   return (
     <div className={cn("flex gap-4", className)}>
-      <a href="https://discord.gg/rHfXrVNe2V" target="_blank">
+      <a href="https://bsky.app/profile/damonk3y.xyz" target="_blank">
         <img
-          src={DiscordIcon}
-          alt="damonk3ys discord"
-          className="size-6"
+          src={BlueskyIcon}
+          alt="damonk3ys bluesky"
+          className="size-5"
         />
       </a>
       <a href="https://x.com/damonk3y_" target="_blank">
@@ -44,6 +45,12 @@ export const SocialLinks = ({
           src={TwitchIcon}
           alt="damonk3ys github"
           className="size-5"
+        />
+      </a><a href="https://discord.gg/rHfXrVNe2V" target="_blank">
+        <img
+          src={DiscordIcon}
+          alt="damonk3ys discord"
+          className="size-6"
         />
       </a>
     </div>
